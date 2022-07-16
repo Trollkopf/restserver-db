@@ -3,11 +3,11 @@ const colors = require('colors');
 
 const dbConn = async()=>{
 
-    const dbconnection = process.env.MONGODB_CNN;
+    const dbconnection = 'mongodb+srv://user_node_cafe:uFV9aQXtxLT1T8t9@miclustercafe.hu0lkff.mongodb.net/cafeDB';
 
     try {
         
-        await mongoose.connect(process.env.MONGODB_CNN, {
+        await mongoose.connect(dbconnection, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             //####### NO LONGER SUPPORTED OPTIONS #######
