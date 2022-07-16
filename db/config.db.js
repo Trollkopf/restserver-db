@@ -3,7 +3,7 @@ const colors = require('colors');
 
 const dbConn = async()=>{
 
-    const dbconnection = 'mongodb+srv://user_node_cafe:uFV9aQXtxLT1T8t9@miclustercafe.hu0lkff.mongodb.net/cafeDB';
+    const dbconnection = process.env.MONGODB_CNN;
 
     try {
         
