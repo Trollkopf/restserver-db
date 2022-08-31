@@ -15,7 +15,7 @@ const dbConn = async()=>{
             // useFindAndModify: true
         })
 
-        console.log(' /-- Base de datos online --/ '.bgWhite.bold);
+        console.log(' /-- Base de datos online --/ '.bgGreen.bold);
 
     } catch (error) {
         console.log(error);

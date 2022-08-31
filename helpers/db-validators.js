@@ -11,7 +11,7 @@ const esRoleValido = async(rol = '')=>{
 const emailExiste = async(correo = '')=>{
     const existeEmail = await Usuario.findOne({correo});
     if(existeEmail){
-        throw new Error(`Ya existe un usuario con el correo electrónico ${ correo}`)
+        throw new Error(`Ya existe un usuario con el correo electrónico ${correo}`)
     }
 }
 
